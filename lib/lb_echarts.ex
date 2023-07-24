@@ -59,16 +59,16 @@ defmodule LbEcharts do
 
   ## Examples
 
-    iex> LbEcharts.stacked_bar(%{
-    ...>   title: "Stacked Bar Chart",
-    ...>   categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-    ...>   orientation: "vertical",
-    ...>   stacked_data: %{
-    ...>     "mail" => [120, 132, 101, 134, 90, 230, 210],
-    ...>     "video" => [220, 182, 191, 234, 290, 330, 310],
-    ...>     "search" => [150, 232, 201, 154, 190, 330, 410],
-    ...>     "direct" => [320, 332, 301, 334, 390, 330, 320]
-    ...>   }})
+        iex> LbEcharts.stacked_bar(%{
+        ...>   title: "Stacked Bar Chart",
+        ...>   categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        ...>   orientation: "vertical",
+        ...>   stacked_data: %{
+        ...>     "mail" => [120, 132, 101, 134, 90, 230, 210],
+        ...>     "video" => [220, 182, 191, 234, 290, 330, 310],
+        ...>     "search" => [150, 232, 201, 154, 190, 330, 410],
+        ...>     "direct" => [320, 332, 301, 334, 390, 330, 320]
+        ...>   }})
   """
   def stacked_bar(opts) do
     options = %{
