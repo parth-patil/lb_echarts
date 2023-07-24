@@ -7,7 +7,11 @@ defmodule LbEcharts.MixProject do
       version: "0.0.1",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      description: description(),
+      package: package(),
+      deps: deps(),
+      name: "lb_echarts",
+      source_url: "https://github.com/parth-patil/lb_echarts"
     ]
   end
 
@@ -22,7 +26,8 @@ defmodule LbEcharts.MixProject do
   defp deps do
     [
       {:kino, "~> 0.10.0"},
-      {:jason, "~> 1.4"}
+      {:jason, "~> 1.4"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -34,7 +39,7 @@ defmodule LbEcharts.MixProject do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["Parth Patil", "Trupti Hosamani"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/parth-patil/lb_echarts"}
